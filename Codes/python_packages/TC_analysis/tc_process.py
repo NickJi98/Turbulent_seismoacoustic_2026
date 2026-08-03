@@ -16,9 +16,19 @@ from pyproj import Geod
 from obspy import UTCDateTime
 from scipy.interpolate import interp1d
 
-# Tropical cyclone database
-base_dir = '/Users/qingji/Documents/Datasets/TC_Track'
-tc_dataset = nc.Dataset(os.path.join(base_dir, 'IBTrACS.ALL.v04r00.nc'))
+# Tropical cyclone database (IBTrACS)
+# {main_dir}/Data/TC_Track, resolved relative to this file
+main_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+base_dir = os.path.join(main_dir, 'Data', 'TC_Track')
+tc_file = os.path.join(base_dir, 'IBTrACS.ALL.v04r00.nc')
+
+if not os.path.exists(tc_file):
+    raise FileNotFoundError(
+        f"IBTrACS database not found: {tc_file}\n"
+        "Download IBTrACS.ALL.v04r00.nc from NOAA NCEI "
+        "(https://www.ncei.noaa.gov/products/international-best-track-archive) "
+        "and place it under Data/TC_Track/.")
+tc_dataset = nc.Dataset(tc_file)
 
 
 # Search TC in the dataset

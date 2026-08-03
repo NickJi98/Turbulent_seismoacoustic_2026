@@ -55,6 +55,10 @@ Atmospheric observations during the landfall of Hurricane Isaac (~620 MB, mostly
 - radar/: Radar wind analyses for missions 20120828H1 and 20120828H2 in GrADS format (.ctl/.dat, read via xgrads in CM1_inputs.ipynb).
 - radiosonde/: Radiosonde soundings of station 72233 (Slidell, LA) and the IGRA2 station list.
 
+### TC_Track (hurricane track database)
+
+- IBTrACS.ALL.v04r00.nc: IBTrACS best-track database (v04r00), used by TC_analysis/tc_process.py to obtain the hurricane track (required by all notebooks). If not present, download it from NOAA NCEI (https://www.ncei.noaa.gov/products/international-best-track-archive) and place it in this folder.
+
 ### CM1 (large-eddy simulations)
 
 CM1 hurricane boundary layer simulations and elastic modeling results (~1.9 GB). Simulation directories are named V{wind}_Cd{drag x 1000} (e.g. V42_Cd22: input gradient wind 42 m/s, drag coefficient 0.022) or R{radius} (radius to hurricane center in km).

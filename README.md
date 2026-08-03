@@ -20,7 +20,7 @@ Download the Datasets and place the `Data/` folder at the top level of this dire
 
 ## Python Environment
 
-Build the conda environment, then install fCWT (next section):
+You can use your own environment as long as the packages in `environment.yml` are installed. You can also build a new conda environment. The installation of fCWT is in the next section.
 
 ```bash
 conda env create -f environment.yml

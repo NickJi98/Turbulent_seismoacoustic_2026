@@ -5,6 +5,7 @@ This directory contains the Jupyter Notebooks performing analyses and reproducin
 Before running the notebooks:
 - Build the python environment from the top-level `environment.yml` (see top-level README.txt).
 - Download the Datasets (https://doi.org/10.25740/zk709vr3334) and place the `Data/` folder at the top level of this archive, next to `Notebooks/`.
+- Make sure the IBTrACS database exists at `Data/TC_Track/IBTrACS.ALL.v04r00.nc` (see Data/README.txt); it is required by all notebooks.
 
 Individual figures are saved to /Figures/Panels/ and /Figures_Sup/Panels/ (the figure saving lines are commented out by default).
 
