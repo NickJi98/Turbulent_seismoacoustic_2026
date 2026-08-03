@@ -9,7 +9,6 @@ Published at: https://doi.org/10.25740/zk709vr3334
 The studied event is Hurricane Isaac (2012). Place this `Data/` folder at the top level of the code archive (next to `Notebooks/` and `Codes/`); the Jupyter Notebooks locate it automatically (see Notebooks/README.txt). Total size is about 4.5 GB.
 
 - Isaac_HQ.png: Satellite basemap image for the maps (Maps.ipynb).
-- IBTrACS.ALL.v04r01.nc: IBTrACS best-track database (v04r01), used by TC_analysis/tc_process.py to obtain the hurricane track (required by all notebooks). If not present, download it from NOAA NCEI (https://www.ncei.noaa.gov/products/international-best-track-archive) and place it in this folder.
 
 ### ASOS (Automated Surface Observing Systems)
 
@@ -55,6 +54,10 @@ Atmospheric observations during the landfall of Hurricane Isaac (~620 MB, mostly
   - KLIX_NVW/: Raw NVW wind profile files.
 - radar/: Radar wind analyses for missions 20120828H1 and 20120828H2 in GrADS format (.ctl/.dat, read via xgrads in CM1_inputs.ipynb).
 - radiosonde/: Radiosonde soundings of station 72233 (Slidell, LA) and the IGRA2 station list.
+
+### TC_track (hurricane track database)
+
+- IBTrACS.ALL.v04r00.nc: IBTrACS best-track database (v04r00), used by TC_analysis/tc_process.py to obtain the hurricane track. A newer version (v04r01) is also provided, which will slightly change the track in the zoom-in plot Figure 1B.
 
 ### CM1 (large-eddy simulations)
 

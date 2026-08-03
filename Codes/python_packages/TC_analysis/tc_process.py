@@ -18,14 +18,14 @@ from scipy.interpolate import interp1d
 
 # International Best Track Archive for Climate Stewardship (IBTrACS)
 main_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-tc_file = os.path.join(main_dir, 'Data', 'IBTrACS.ALL.v04r01.nc')
+tc_file = os.path.join(main_dir, 'Data/TC_track', 'IBTrACS.ALL.v04r01.nc')
 
 if not os.path.exists(tc_file):
     raise FileNotFoundError(
         f"IBTrACS database not found: {tc_file}\n"
         "Download IBTrACS.ALL.v04r01.nc from NOAA NCEI "
         "(https://www.ncei.noaa.gov/products/international-best-track-archive) "
-        "and place it under Data/.")
+        "and place it under Data/TC_track/.")
 tc_dataset = nc.Dataset(tc_file)
 
 
