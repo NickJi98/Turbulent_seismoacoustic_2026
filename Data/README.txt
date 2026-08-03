@@ -2,23 +2,24 @@
 
 This directory contains the datasets accompanying the following study:
 
-Ji, Q., Dey, I., and Dunham, E. (2026). Turbulent seismoacoustic imprints during a hurricane landfall.
+Ji, Q., Dey, I., & Dunham, E. (2026). Turbulent seismoacoustic imprints during a hurricane landfall. Science. https://doi.org/10.1126/science.adt7323
 
 Published at: https://doi.org/10.25740/zk709vr3334
 
 The studied event is Hurricane Isaac (2012). Place this `Data/` folder at the top level of the code archive (next to `Notebooks/` and `Codes/`); the Jupyter Notebooks locate it automatically (see Notebooks/README.txt). Total size is about 4.5 GB.
 
 - Isaac_HQ.png: Satellite basemap image for the maps (Maps.ipynb).
+- IBTrACS.ALL.v04r01.nc: IBTrACS best-track database (v04r01), used by TC_analysis/tc_process.py to obtain the hurricane track (required by all notebooks). If not present, download it from NOAA NCEI (https://www.ncei.noaa.gov/products/international-best-track-archive) and place it in this folder.
 
 ### ASOS (Automated Surface Observing Systems)
 
 Surface wind records from ASOS weather stations, each paired with a nearby TA seismic station.
 
-- {TA station}_{ASOS station}.csv (e.g. 645A_HUM.csv): Wind record of the ASOS station closest to the given TA station.
-- 645A_HUM_Jan.csv: Reference record for a quiet period (January 2012).
+- {TA station}_{ASOS station}.csv (e.g. 645A_HUM.csv): ASOS data closest to the given TA station.
+- 645A_HUM_Jan.csv: ASOS data for January 2012 at station HUM (closest to TA.645A).
 - LA_meta.csv: Metadata of the Louisiana ASOS network.
 
-### TA (EarthScope Transportable Array)
+### TA (Transportable Array)
 
 Seismic and infrasound data and derived spectral products (~2.2 GB).
 
@@ -37,7 +38,7 @@ Seismic and infrasound data and derived spectral products (~2.2 GB).
   - Cpp_{station}.npz: Pressure PSD and RMS amplitude in 15-minute windows.
   - Dpp_{station}.npz: Second-order pressure structure functions in 15-minute windows.
 
-### fcmp_tower (Florida Coastal Monitoring Program wind tower)
+### fcmp_tower (Florida Coastal Monitoring Program portable towers)
 
 - raw_data/: Empty placeholder for the raw 32-Hz wind tower records, which are available upon request (see Acknowledgments of the paper).
 - turbulence/: Wind spectra (Suu_{height}.npz) and structure functions (Duu_{height}.npz) at heights of 5, 7.5, 10, 12.5 and 15 m, computed from the raw records by calc_obs_spec.ipynb.
@@ -54,10 +55,6 @@ Atmospheric observations during the landfall of Hurricane Isaac (~620 MB, mostly
   - KLIX_NVW/: Raw NVW wind profile files.
 - radar/: Radar wind analyses for missions 20120828H1 and 20120828H2 in GrADS format (.ctl/.dat, read via xgrads in CM1_inputs.ipynb).
 - radiosonde/: Radiosonde soundings of station 72233 (Slidell, LA) and the IGRA2 station list.
-
-### TC_Track (hurricane track database)
-
-- IBTrACS.ALL.v04r00.nc: IBTrACS best-track database (v04r00), used by TC_analysis/tc_process.py to obtain the hurricane track (required by all notebooks). If not present, download it from NOAA NCEI (https://www.ncei.noaa.gov/products/international-best-track-archive) and place it in this folder.
 
 ### CM1 (large-eddy simulations)
 

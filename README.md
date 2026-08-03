@@ -2,7 +2,7 @@
 
 Codes for the following study:
 
-> Ji, Q., Dey, I., and Dunham, E. (2026). Turbulent seismoacoustic imprints during a hurricane landfall.
+> Ji, Q., Dey, I., & Dunham, E. (2026). Turbulent seismoacoustic imprints during a hurricane landfall. *Science*. https://doi.org/10.1126/science.adt7323
 
 The Datasets are available at <https://doi.org/10.25740/zk709vr3334>
 
