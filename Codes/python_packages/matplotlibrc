@@ -1,0 +1,52 @@
+# Figure size and DPI
+figure.figsize: 7, 5
+figure.dpi: 300
+
+# Font settings
+font.family: sans-serif
+font.sans-serif: Arial
+font.size: 10
+axes.titlesize: 12
+axes.labelsize: 10
+legend.fontsize: 10
+xtick.labelsize: 8
+ytick.labelsize: 8
+
+# Axes settings
+axes.linewidth: 1
+axes.labelweight: bold
+axes.titleweight: bold
+
+# Line and marker settings
+lines.linewidth: 1
+lines.markersize: 4
+
+# Grid settings
+grid.linestyle: --
+grid.linewidth: 0.5
+grid.color: gray
+
+# Save figure settings
+savefig.dpi: 300
+savefig.bbox: tight
+
+# Ticks
+xtick.major.size: 5
+xtick.minor.size: 3
+ytick.major.size: 5
+ytick.minor.size: 3
+
+# Legend settings
+legend.frameon: True
+legend.loc: best
+legend.framealpha: 1
+legend.edgecolor: black
+
+# Color map
+image.cmap: jet
+
+# Tight layout
+figure.autolayout: True
+
+# PDF settings
+pdf.fonttype: 42  # Embed TrueType fonts in PDFs

@@ -1,0 +1,33 @@
+# Conda environment for the Jupyter Notebooks and Python scripts in this archive.
+#
+# Build the environment with:
+#   conda env create -f environment.yml
+#   conda activate <name>
+#
+# The fCWT package is NOT included here: it must be built from patched source.
+# After activating the environment, run:
+#   bash fcwt_install/install_fcwt.sh
+# or follow the manual instructions in the top-level README.txt.
+
+name: seismo-isaac
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - netcdf4
+  - xarray
+  - cartopy
+  - obspy
+  - pyproj
+  - opencv
+  - pycwt
+  - cmcrameri
+  - xgrads
+  - jupyterlab
+  # Build prerequisites for fCWT (built from source, see fcwt_install/)
+  - fftw
+  - pip

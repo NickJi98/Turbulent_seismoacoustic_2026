@@ -1,0 +1,12 @@
+# Datasets (published at https://doi.org/10.25740/zk709vr3334)
+Data/*
+!Data/README.txt
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
