@@ -16,11 +16,11 @@ dependencies:
   - python=3.11
   - numpy
   - scipy
-  - pandas
-  - matplotlib
+  - pandas=2.2.3
+  - matplotlib=3.9.2
   - netcdf4
   - xarray
-  - cartopy
+  - cartopy=0.24.1
   - obspy
   - pyproj
   - opencv
