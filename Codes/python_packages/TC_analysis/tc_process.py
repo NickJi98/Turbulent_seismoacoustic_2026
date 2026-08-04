@@ -18,7 +18,7 @@ from scipy.interpolate import interp1d
 
 # International Best Track Archive for Climate Stewardship (IBTrACS)
 main_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-tc_file = os.path.join(main_dir, 'Data/TC_track', 'IBTrACS.ALL.v04r01.nc')
+tc_file = os.path.join(main_dir, 'Data/TC_track', 'IBTrACS.ALL.v04r00.nc')
 
 if not os.path.exists(tc_file):
     raise FileNotFoundError(
