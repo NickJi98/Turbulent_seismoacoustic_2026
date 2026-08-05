@@ -1,7 +1,7 @@
 # Datasets (published at https://doi.org/10.25740/zk709vr3334)
-# Keep Data/ as an empty placeholder folder
+# Only the dataset README is tracked
 Data/*
-!Data/.gitkeep
+!Data/README.txt
 
 # Python
 __pycache__/

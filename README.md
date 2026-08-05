@@ -6,7 +6,7 @@ Codes for the following study:
 
 The Datasets are available at <https://doi.org/10.25740/zk709vr3334>
 
-Download the Datasets and place the `Data/` folder at the top level of this directory (next to `Codes/` and `Notebooks/`). The Jupyter Notebooks assume this location; for the MATLAB scripts, set your data directories in the respective `init_env.m`. See the README.txt inside the downloaded `Data/` folder for the dataset contents.
+Download the Datasets and place the `Data/` folder at the top level of this directory (next to `Codes/` and `Notebooks/`). The Jupyter Notebooks assume this location; for the MATLAB scripts, set your data directories in the respective `init_env.m`. See [Data/README.txt](Data/README.txt) for the dataset contents.
 
 ## Directory Structure
 
