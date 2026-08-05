@@ -1,6 +1,7 @@
 # Datasets (published at https://doi.org/10.25740/zk709vr3334)
+# Keep Data/ as an empty placeholder folder
 Data/*
-!Data/README.txt
+!Data/.gitkeep
 
 # Python
 __pycache__/
