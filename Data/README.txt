@@ -4,7 +4,7 @@ This directory contains the datasets accompanying the following study:
 
 Ji, Q., Dey, I., & Dunham, E. (2026). Turbulent seismoacoustic imprints during a hurricane landfall. Science. https://doi.org/10.1126/science.adt7323
 
-Published at: https://doi.org/10.25740/zk709vr3334
+Dataset published at: https://doi.org/10.25740/zk709vr3334
 
 The studied event is Hurricane Isaac (2012). Place this `Data/` folder at the top level of the code archive (next to `Notebooks/` and `Codes/`); the Jupyter Notebooks locate it automatically (see Notebooks/README.txt). Total size is about 4.5 GB.
 
